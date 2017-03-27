@@ -1,0 +1,24 @@
+{
+    "name": "amelia/backblaze",
+    "type": "library",
+    "description": "Backblaze laravel storage adapter",
+    "keywords": ["b2", "backblaze", "flysystem", "storage", "laravel"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Amelia Ikeda",
+            "email": "amelia@dorks.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "mhetreramesh/flysystem-backblaze": "^1.0",
+        "illuminate/support": "~5.3 | ~5.4",
+        "illuminate/cache": "~5.3 | ~5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amelia\\Backblaze\\": "src/"
+        }
+    }
+}
