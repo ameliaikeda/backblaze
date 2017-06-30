@@ -39,7 +39,7 @@ class Client extends BaseClient
     protected function auth()
     {
         return Cache::remember('b2', 1320, function () {
-            $this->client->request('GET', 'https://api.backblaze.com/b2api/v1/b2_authorize_account', [
+            return $this->client->request('GET', 'https://api.backblaze.com/b2api/v1/b2_authorize_account', [
                 'auth' => [$this->accountId, $this->applicationKey]
             ]);
         });
