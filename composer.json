@@ -20,5 +20,12 @@
         "psr-4": {
             "Amelia\\Backblaze\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amelia\\Backblaze\\BackblazeServiceProvider"
+            ]
+        }
     }
 }
